@@ -1,0 +1,255 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1380px){
+	.top_wrapper .cont_text span{
+		font-size: 2.5em;
+	}
+	.top_wrapper .cont_text p{
+		font-size: 3.5em;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.h_button{
+		text-align: center;
+	}
+	.logo_container svg{
+		width: 80px;
+		height: 80px;
+	}
+	.logo_container h2{
+		font-size: 60px;
+		margin: 23px 0;
+		line-height: 19px;
+	}
+	.logo_container h2 span{
+		font-size: 25px;
+		letter-spacing: 2px;
+	}
+	.top_wrapper .cont_text span{
+		font-size: 2.5em;
+	}
+	.top_wrapper .cont_text p{
+		font-size: 2em;
+	}
+	.top_wrapper .top_text h1{
+		font-size: 2.3em;
+	}
+	.top_wrapper .top_text p{
+		font-size: 1.5em;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo_container svg{
+		width: 60px;
+		height: 60px;
+		margin: 10px 0;
+	}
+	.logo_container h2{
+		font-size: 50px;
+		margin: 23px 0;
+		line-height: 17px;
+	}
+	.logo_container h2 span{
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	.h_button a{
+		font-size: 1em;
+	}
+	.header_mnu a{
+		font-size: 0.8em;
+	}
+	.header_mnu li{
+		margin: 8px;
+	}
+	.social_networks{
+		font-size: 1em;
+		margin: 6px 4px;
+	}
+	.personal_last_b{
+		margin-top: 35px;
+	}
+	.top_wrapper .cont_text span{
+		font-size: 2em;
+	}
+	.top_wrapper .cont_text p{
+		font-size: 1.5em;
+	}
+	.top_wrapper .top_text h1{
+		font-size: 1.8em;
+	}
+	.top_wrapper .top_text p{
+		font-size: 1em;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.resume_container .left,
+	.resume_container .left h3{
+		text-align: left;
+	}
+	.resume_icon{
+		margin-bottom: 10px;
+	}
+	.h_button a{
+		font-size: 0.8em;
+		margin: 0 5px;
+		padding: 5px 8px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top_wrapper .top_text h1{
+		font-size: 2em;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.main_footer .social_wrap {
+		float: left;
+		margin-top: 20px;
+		padding-left: 0;
+	}
+	.logo_container,
+	.h_button li{
+		display: block;
+		text-align: center;
+	}
+	.h_button a{
+		margin: 5px;
+		font-size: 1.4em;
+		padding: 8px 12px;
+	}
+	.logo_container{
+		text-align: center;
+		margin-left: 20px;
+	}
+	.logo_container svg{
+		width: 80px;
+		height: 80px;
+		margin: 10px 0;
+	}
+	.logo_container h2{
+		font-size: 60px;
+		margin: 35px 0 10px;
+		line-height: 17px;
+	}
+	.logo_container h2 span{
+		font-size: 25px;
+		letter-spacing: 2px;
+	}
+	.header_mnu{
+		display: none;
+	}
+	.social_networks li{
+		float: none;
+		margin: 5px;
+	}
+	.social_networks li a{
+		color: #3DA9A3;
+	}
+	.social_networks ul{
+		text-align: center;
+	}
+	.top_wrapper .cont_text span{
+		font-size: 3em;
+	}
+	.top_wrapper .cont_text p{
+		margin: 25px;
+	}
+	.top_wrapper .top_text{
+		margin: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+@keyframes sliderIn {
+	from { transform: scale(0);}
+	to{ transform: scale(1);}
+}
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes fadeOut {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+@keyframes fadeInVid {
+	from {opacity: 0}
+	to {opacity: 0.1}
+}
+
+@keyframes hr {
+	from {width: 0;}
+	to {width: 70px;}
+}
+
+@keyframes hrOut {
+	from {width: 70px;}
+	to {width: 0px;}
+}
+
+@keyframes spark {
+	from {clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);}
+	to {clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);}
+}
+/* Рухливий фон для контаків */
+@keyframes slide {
+	0% {
+		transform:translateX(-25%);
+	}
+	100% {
+		transform:translateX(25%);
+	}
+}
+
+/* Падаючі паралакс Зірки */
+@keyframes animStar {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-2000px);
+	}
+}
