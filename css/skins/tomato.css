@@ -1,0 +1,163 @@
+body {
+  color: #e73d81;
+  letter-spacing: 1px; }
+
+a {
+  color: #f9712ed6; }
+
+p,
+body .main_footer {
+  color: #d9cbcb; }
+
+.main_footer {
+  letter-spacing: 0px; }
+
+.color_element {
+  color: #f9712ed6; }
+
+.color_bg {
+  background-color: #f9712ed6; }
+
+.color_border {
+  border-color: #f9712ed6; }
+
+.main_color_bg {
+  background-color: #e73d81;
+  color: #444343; }
+  .main_color_bg .s_descr::after {
+    background-color: #fff; }
+
+.bg_light {
+  background-color: #f5d44d; }
+
+.bg_dark {
+  background-color: #444343;
+  color: #fff; }
+  .bg_dark .s_descr::after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
+
+.logo_container svg:hover .eyes, .logo_container svg:hover .wuha {
+  fill: green; }
+.logo_container h2 {
+  color: #f9712ed6; }
+  .logo_container h2 span {
+    color: #f5d44d;
+    letter-spacing: 5px; }
+
+.h_button a {
+  color: #d9cbcb; }
+.h_button .button_brif {
+  background: #f9712ed6; }
+.h_button .button_application {
+  background: #3da9a3; }
+.h_button .button_numb {
+  color: #f9712ed6; }
+
+.header_mnu li a {
+  color: #444343; }
+.header_mnu li:hover a {
+  border-bottom: 1px solid #f9712ed6; }
+
+.toggle_mnu {
+  background-color: #3da9a3; }
+
+.top_mnu a {
+  color: #d9cbcb; }
+.top_mnu a:hover {
+  color: #f9712ed6;
+  letter-spacing: 4px; }
+
+.top_text h1 {
+  color: #f9712ed6;
+  border: 8px solid #f9712ed6; }
+.top_text p {
+  color: #444343;
+  letter-spacing: 5px; }
+
+.cont_text p {
+  color: #3da9a3; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr::after {
+    background-color: #e73d81; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #d9cbcb; }
+
+.s_about p:nth-child(even) {
+  color: #f9712ed6; }
+.s_about li {
+  color: #d9cbcb; }
+
+.ob_item button {
+  color: #3da9a3; }
+  .ob_item button:hover {
+    border: 1px dashed #f9712ed6;
+    color: #f9712ed6; }
+
+.personl_header {
+  letter-spacing: 2px; }
+
+.uk-card-body {
+  text-align: center; }
+  .uk-card-body .button_slide {
+    color: #444343;
+    background-color: #d9cbcb; }
+    .uk-card-body .button_slide:hover {
+      background: none;
+      border: 1px dashed #444343; }
+
+.uk-position-relative a {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.resume_container h3 {
+  color: #e73d81;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400; }
+
+.resume_item .year {
+  background-color: #f9712ed6; }
+.resume_item h3 {
+  letter-spacing: 1px; }
+
+.s_portfolio li {
+  letter-spacing: 2px;
+  color: #d9cbcb; }
+  .s_portfolio li.active {
+    color: #fff;
+    border-bottom: solid 1px #f9712ed6; }
+
+.port_item_cont a {
+  color: #f9712ed6;
+  border-color: #f9712ed6; }
+
+.main_footer a {
+  color: #f9712ed6; }
+
+.contacts_icon {
+  color: #f9712ed6; }
+
+.text-danger {
+  color: #f9712ed6; }
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #f9712ed6; }
+form input,
+form textarea {
+  letter-spacing: 2px; }
+
+.main_form button {
+  background-color: #f9712ed6;
+  letter-spacing: 2px; }
+
+.form-group {
+  letter-spacing: 2px;
+  color: #d9cbcb; }
+
+/*# sourceMappingURL=tomato.css.map */
