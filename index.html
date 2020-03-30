@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Video With Js</title>
-	<link rel="stylesheet" href="css/mong_js.css">
-	<link rel="stylesheet" href="libs/animate/animate.min.css">
-	<link rel="stylesheet" href="css/media.css">
+
+	<meta charset="utf-8">
+
+	<title>Mongoose_Agency</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="libs/fontAwesome/css/font_awesome.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
 </head>
+
 <body>
-	<section class="head" data-vide-bg="img/bg_mong.webm">
+
+	<section id="head">
 		<header class="top_menu_wrapper">
 			<div class="logo">
-				<img class="logo_img" src="img/mongoose.svg" alt="Mongoose_Agency">
+				<img class="logo_img" src="../img/mongoose.svg" alt="Mongoose_Agency">
 			</div>
 			<nav class="top_menu">
 				<ul class="menu_list">
 					<li class="menu_item"><a href="#">Про Нас</a></li>
 					<li class="menu_item"><a href="#">Послуги</a></li>
-					<li class="menu_item"><a href="#">Портфоліо</a></li>
+					<li class="menu_item"><a href="../portfolio.html">Портфоліо</a></li>
 					<li class="menu_item"><a href="#">Зв'язки</a></li>
-					<li class="menu_item"><a href="#">Про СММ</a></li>
+					<li class="menu_item spin thick"><a href="#">Про СММ</a></li>
 				</ul>
 			</nav>
 			<div class="number"><a href="#">+380 545 545 356</a></div>
@@ -33,106 +43,158 @@
 			<nav class="top_mnu">
 				<ul>
 					<li class="menu_item"><a href="#about">Про Нас</a></li>
-					<li class="menu_item"><a href="#What_SMM">Послуги</a></li>
-					<li class="menu_item"><a href="#">Портфоліо</a></li>
+					<li class="menu_item"><a href="#what_smm">Послуги</a></li>
+					<li class="menu_item"><a href="#form">Портфоліо</a></li>
 					<li class="menu_item"><a href="#">Зв'язки</a></li>
 					<li class="menu_item"><a href="#">Про СММ</a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="wrap_block">
-			<h1>Залучаємо клієнтів із соціальних мереж</h1>
+		<div class="video">
+			<video src="img/bg_mong.webm" class="video_media" autoplay muted loop></video>
 		</div>
 	</section>
+
 	<main id="about">
 		<div class="a_title">
-			<h2>Про Нас</h2>
+			<h1>Про Нас</h1>
 		</div>
-		<div class="t_block_1">
-			<div class="pattern_cont">
-				<img class="p_deg" src="img/drawing.svg" alt="Mongoose Pattern">
-			</div>
+		<div class="about_text_1">
+			<img class="patern" src="img/drawing.svg" alt="Mongoose Pattern">
 			<h4>Ми - команда фахівців</h4>
 			<p>Дуже любимо соціальні мережі і рекламу. <br>А також любимо креативити і придумовувати нестандартні<br> шляхи вирішення тієї чи іншої задачі.</p>
 		</div>
-		<div class="t_block_2">
-			<div class="pattern_cont">
-				<img src="img/drawing.svg" alt="Mongoose Pattern">
-			</div>
+		<div class="about_text_2">
+			<img class="patern" src="img/drawing.svg" alt="Mongoose Pattern">
 			<h4>Яка у на мета?</h4>
 			<p>Углобальному сенсі ми сформували її якось так:<br>
 			зробити рекламу зрозумілою та користною для споживача<br> і якісною(така що продає) для бренду.</p>
 		</div>
 		<div class="block_cat">
+			<div class="title_cat">
+				<img class="patern" src="img/drawing.svg" alt="Mongoose Pattern">	
+				<h3>Ми зробимо рекламу яка чіпляє і продає.</h3>
+			</div>
 			<div class="block_cat_wrap">
 				<img src="img/cat.png" alt="Кіт бо мацур">
 			</div>
-			<h3>Ми зробимо рекламу яка чіпляє і продає.</h3>
 		</div>
 	</main>
-	<section id="What_SMM">
-			<!-- bg у про нас fff opa 50% -->
-		<div class="left">
-			<div class="w_tittle_wrap">
-				<h3>Що таке <br><span>СММ</span> <br>просування</h3>
-			</div>
+	<aside id="what_smm">
+		<div class="what_left">
+			<div class="what_card">
+				<img class="patern" src="img/drawing.svg" alt="Mongoose Pattern">
+				<span>Що таке</span>
+				<h2>СММ</h2> 
+				<span>просування</span>
+			</div>	
 		</div>
-		<div class="right">
-			<div class="t_wrap">
-				<p> <span>Social Media Marketing - </span>
+		<div class="what_right">
+			<p> <span>Social Media Marketing - </span>
 				сучасний напрямок для просування брендів, продуктів і послуг в маси.
 				Зараз дивно не знайти на сайті позначку соціальних мереж,
-				де користувач може задати будь-які питання і отримати на них відповіді. <br><br>
+				де користувач може задати будь-які питання і отримати на них відповіді. <br><br class="brnone">
 				І недостатньо створити співтовариство і наповнити його описом послуг або товарів,
-				щоб залучити нових шанувальників бренду, треба використовувати комплексний підхід. <br><br>
+				щоб залучити нових шанувальників бренду, треба використовувати комплексний підхід. <br><br class="brnone">
 				У цьому полягає суть SMM - поєднання унікального контенту 
 				 з точним дизайном і має бути діюча таргетированной рекламою.</p>
-			</div>
 		</div>
-		
-	</section>
-	<section id="per">
-		<!-- bg eee -->
-		<div class="wrap_tettle">
-			<h2>Переваги СММ</h2>
-			<img src="img/robo_hand.png" alt="рука робота / robo hand">
-		</div>
-		<div class="per_wrap">
-			<img src="img/search.png" alt="іконка пошуку / search icon">
-			<p>покращення впізнаваності бренду</p>
-
-			<img src="img/money.png" alt="іконка грошей / money icon">
-			<p>підвищення лояльності цільової аудиторії до бренду</p>
-			<img src="img/target.png" alt="іконка цілі / target icon">
-			<p>формування бази потенційниї клієнтів</p>
-
-			<img src="img/graph.png" alt="іконка графіку / graph icon">
-			<p>створення напрямку спілкування з клієнтом</p>
-
-			<img src="img/dolar.png" alt="іконка долару / icon dolar">
-			<p>збільшення кількості продажів</p>
-
-		</div>
+	</aside>
+	<section id="advantages">
+		<h2>Переваги СММ</h2>
+		<ul class="list_advantages">
+			<li class="advantag_item">
+				<img src="../img/search.png" alt="іконка пошуку / search icon">
+				<p>покращення впізнаваності бренду</p>
+			</li>
+			<li class="advantag_item">
+				<img src="../img/money.png" alt="іконка грошей / money icon">
+				<p>підвищення лояльності цільової аудиторії до бренду</p>
+			</li>
+			<li class="advantag_item">
+				<img src="../img/target.png" alt="іконка цілі / target icon">
+				<p>формування бази потенційниї клієнтів</p>
+			</li>
+			<li class="advantag_item">
+				<img src="../img/graph.png" alt="іконка графіку / graph icon">
+				<p>створення напрямку спілкування з клієнтом</p>
+			</li>
+			<li class="advantag_item">
+				<img src="../img/dolar.png" alt="іконка долару / icon dolar">
+				<p>збільшення кількості продажів</p>
+			</li>
+		</ul>
 	</section>
 	<section id="answers">
-		<h2>Відповіді на запитання</h2>
-		<div class="popup_wrap">
-			<div class="popup_item">
-				<p>Скільки коштує СММ?</p>
-				<p class="dn">Залежить від виконаної роботи.
-				Та мінімальний пакет коштує 250$/місяць
-				<a href="#">Пакет Start</a></p>
-			</div>
+		<div class="answer_title">
+			<h2>Відповіді на запитання</h2>
+			<img src="../img/drawing.svg" alt="Mongoose Pattern" class="patern">
+		</div>
+		<div class="answer_container">
+			<img src="../img/molekula.png" alt="Molekula">
+			<ul class="answer_list">
+				<li class="popup_item first">Cкільки коштує СММ? <p>Залежно від виконаної роботи. Та мінімальний пакет коштує 250$/місяць.  <a href="#">Пакет Start</a></p><span><</span></li>
+				<li class="popup_item two">Скільки коштує реклама на Facebook? <p>Мінімальна вартість 100$ де 80$ це бюджет на рекламу. <a href="#">Пакет Start</a></p> <span><</span></li>
+				<li class="popup_item thre">Чому варто використовувати комплексний підхід <p>Комплексний підхід дає кращі результати. Ми складаємо стратегію просування і ціленаправлено вицілюємо ЦА і діємо згідно з планом.</p><span><</span> </li>
+				<li class="popup_item fhour">СММ у Закарпатті? <p>Так так ми місні фраєри тать малисте то знати Но тать Но! <a href="#">Facebook</a></p><span><</span></li>
+			</ul>
+		</div>
+		<div class="brif"><a href="https://docs.google.com/forms/d/1eKhMFVnpm9BmHmwq1uyeBb9ig7L5ciqnF6io4dLduVU/edit" class="btn">Безкоштовна консультація</a></div>
+	</section>
+	<section id="etaps">
+		<h2>Етапи роботи</h2>
+		<div class="etaps_wrap">
+				<a href="https://docs.google.com/forms/d/1eKhMFVnpm9BmHmwq1uyeBb9ig7L5ciqnF6io4dLduVU/edit">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<p>Ви заповнюєте бриф - ми аналізуємо ваші цілі та задачі.</p>
+				<p>Ми скаладаємо для вас комерційну пропозицію.</p>
+				<p>Оплата послуги, обговорення бюджету.</p>
+				<p>Початок роботи.</p>
+				<p>Щомісячна звітність.</p>
 		</div>
 	</section>
+	
+	<!-- <section class="formsection">
+		<form action="">
+			
+		</form>
+	</section> -->
 
-	<script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
-	<script src="js/jquery.vide.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-	<script src="js/mongo_js.js"></script>
+	<footer class="main-foot">
+
+			<ul class="foot_menu">
+				<li class="menu_item"><a href="#">Про Нас</a></li>
+				<li class="menu_item"><a href="#">Послуги</a></li>
+				<li class="menu_item"><a href="#">Портфоліо</a></li>
+				<li class="menu_item"><a href="#">Зв'язки</a></li>
+				<li class="menu_item spin thick"><a href="#">Про СММ</a></li>
+			</ul>
+
+			<div class="center">
+				<div class="footer-blog">
+					<h3>Mongoose_Agency</h3>
+					<span>SMM Creators</span>
+				</div>
+				<div class="footer-copi">
+					Усі права захищені~©~2020р
+				</div>
+				<img src="../img/mongoose.svg" alt="Mongoose_Agency logo">
+			</div>
+			<ul class="contacts">
+				<li><a href="https://www.facebook.com/MongooseSMM/"><i class="fab fa-facebook-square"></i>facebook</a></li>
+				<li><a href="https://www.instagram.com/mongoose.agency/"><i class="fab fa-instagram"></i>instagram</a></li>
+				<li><a href="https://mail.google.com/mail/u/0/"><i class="fa fa-envelope"></i>mongoose.agency1@gmail.com</a></li>
+				<li><a href=""><i class="fa fa-phone"></i>+380 66 745 6713</a></li>
+			</ul>
+
+
+	</footer>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>

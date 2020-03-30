@@ -1,0 +1,884 @@
+@import "vars"
+
+/*========== Video Config  ============*/
+@media (min-aspect-ratio: 16/9)
+	#video_bg
+		width: 100%
+		height: auto
+	
+@media (max-aspect-ratio: 16/9)
+	#video_bg
+		width: auto
+		height: 100%
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	#head
+		height: auto
+		.top_menu_wrapper
+			width: 100vw
+	.patern
+		width: 80px
+	#about 
+		.a_title 
+			h1
+				font-size: 3em
+		.about_text_1 
+			img
+			h4
+				font-size: 2.4em
+			p
+				font-size: 1em
+		.about_text_2 
+			img
+				top: 
+			h4
+				font-size: 2.4em
+			p
+				font-size: 1em
+		.block_cat
+			.title_cat 
+				img
+					top: -3vh
+				h3
+					font-size: 2.2em
+					padding: 5px 3px
+			.block_cat_wrap
+				right: -18px
+				top: -18px
+				width: 21vw
+				img
+					width: 110%
+	#what_smm 
+		.what_left 
+			.what_card 
+				margin: 23% 14%
+				img
+					left: 6%
+					top: 15px
+				span
+					font-size: 2.6em
+				h2
+					font-size: 8em
+		.what_right 
+			padding: 25px 25px 0 0
+			p
+				font-size: 20px
+				line-height: 29px
+	// section advantages
+	#advantages 
+		h2
+			font-size: 3em
+			&::after
+				width: 360px
+				height: 360px
+		.list_advantages
+			li
+				p
+					font-size: 1.6em
+					line-height: 1.8em
+					padding-right: 16px
+	// section answer
+	#answers
+		.answer_title
+			h2
+				font-size: 3.2em
+				padding: 0
+				padding-left: 12%
+			img
+				right: 21%
+				top: -4px
+		.answer_container
+			height: 63vh
+			img
+				height: 60vh
+			.answer_list
+				margin: 0
+				.first
+					font-size: 1.5em
+					margin-left: 14%
+					margin-top: 5%
+					max-width: 340px
+				.two
+					font-size: 1.2em
+					a
+						display: block
+				.thre
+					margin-left: 0
+				.fhour
+					font-size: 1.5em
+					max-width: 340px
+					margin-right: 7%
+	// section etaps
+	#etaps 
+		h2
+			padding: 10px 10%
+			&::before
+				width: 340px
+				height: 340px
+		.etaps_wrap 
+			a
+				&::after
+					width: 13.3vw
+			p
+				padding: 0 15px
+	// футер
+	.main-foot
+		.center
+			img
+				left: 0
+				margin: 0 12%
+		.contacts
+			li
+				&:nth-child(3) a
+					font-size: 13px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.top_menu_wrapper
+		grid-template-columns: 80px 3fr 1fr
+		.top_menu
+			width: 100%
+			.menu_list
+				font-size: 1em
+				padding: 0
+				li:hover a
+					font-size: 17px
+			.number a
+				font-size: 14px
+	#about 
+		.a_title 
+			h1
+				font-size: 2.6em
+		.about_text_1 
+			img
+				top: -5vh
+				left: -1vw
+			h4
+				font-size: 1.8em
+			p
+				font-size: 15px
+		.about_text_2 
+			img
+			h4
+				font-size: 1.8em
+			p
+				font-size: 15px
+		.block_cat
+			.title_cat 
+				img
+					top: -4vh
+				h3
+					font-size: 1.6em
+					padding: 5px 20px
+			.block_cat_wrap
+				right: -18px
+				top: -18px
+				width: 21vw
+				img
+					width: 110%
+	// section what smm
+	#what_smm 
+		.what_left 
+			.what_card 
+				margin: 23% 8%
+				img
+					left: 14%
+					top: 2px
+				span
+					font-size: 2.1em
+				h2
+					font-size: 6em
+		.what_right 
+			padding: 25px 25px 0 0
+			p
+				font-size: 18px
+				line-height: 26px
+				span
+					font-size: 1.6em
+	// section advantages
+	#advantages 
+		h2
+			font-size: 2.4em
+			&::after
+				width: 280px
+				height: 275px
+				top: 0
+		.list_advantages
+			margin-top: 30px
+			li
+				margin: 0
+				p
+					font-size: 1.3em
+					line-height: 1.4em
+					padding-right: 8px
+					margin: 8px
+	// section answer
+	#answers
+		height: 100vh
+		padding: 25px 0
+		.answer_title
+			h2
+				font-size: 2.5em
+			img
+				right: 19%
+				top: -15px
+		.answer_container
+			height: 63vh
+			img
+				height: 60vh
+			.answer_list
+				margin: 0
+				.first
+					font-size: 1.3em
+					margin-left: 10%
+					margin-top: 5%
+					max-width: 300px
+				.two
+					font-size: 1em
+					margin: 14px
+					max-width: 280px
+					a
+						display: block
+				.thre
+					margin-left: 0
+					font-size: 1.1em
+					max-width: 350px
+				.fhour
+					font-size: 1.3em
+					max-width: 300px
+					margin-right: 5%
+					margin-bottom: 8%
+				.popup_item
+					padding: 10px 20px
+	// section etaps
+	#etaps 
+		h2
+			padding: 10px 8%
+			margin-right: 23%
+			font-size: 2.5em
+			&::before
+				width: 300px
+				height: 300px
+		.etaps_wrap 
+			padding: 77px 40px 30px 20px
+			a
+				width: 70px
+				height: 70px
+				font-size: 2.6rem
+				line-height: 2.6rem
+				&::after
+					width: 10.5vw
+			p
+				padding: 0
+				font-size: 15px
+	// футер
+	.main-foot
+		grid-template-columns: 1fr 2fr 2fr
+		.center
+			img
+				left: 0
+				margin: 0 12%
+		.contacts
+			padding: 0
+			li
+				text-align: right
+				a
+					font-size: 13px
+		
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.top_menu_wrapper
+		grid-template: 1fr 1fr/ 1fr 1fr
+		.top_menu
+			grid-column: 1/3
+			background: #fff
+		.number
+			grid-column: 2/3
+			grid-row: 1/2
+	.patern
+		width: 50px
+	#about 
+		.a_title 
+			h1
+				font-size: 1.6em
+		.about_text_1 
+			img
+				top: -4vh
+				left: -1vw
+			h4
+				font-size: 1.1em
+			p
+				font-size: 13px
+		.about_text_2 
+			padding-left: 22px
+			img
+				top: -2vh
+			h4
+				font-size: 1.1em
+			p
+				font-size: 13px
+		.block_cat
+			.title_cat 
+				img
+					top: -2vh
+				h3
+					font-size: 1em
+					padding: 5px 20px
+			.block_cat_wrap
+				right: -18px
+				top: -18px
+				width: 21vw
+				img
+					width: 110%
+		// section what smm
+	#what_smm 
+		.what_left 
+			.what_card 
+				margin: 23% 5%
+				img
+					left: 14%
+					top: 9px
+				span
+					font-size: 1.2em
+				h2
+					font-size: 4em
+		.what_right 
+			padding: 10px
+			p
+				font-size: 13px
+				line-height: 19px
+				span
+					font-size: 1.1em
+				.brnone
+					display: none
+	// section advantages
+	#advantages 
+		padding: 30px 0
+		h2
+			font-size: 1.6em
+			&::after
+				width: 165px
+				height: 165px
+		.list_advantages
+			margin-top: 30px
+			li
+				width: 68%
+				p
+					font-size: 1em
+					line-height: 1.4em
+					padding-right: 45px
+					margin: 8px
+				img
+					margin: 0
+					width: 40px
+	// section answer
+	#answers
+		height: 100vh
+		padding: 25px 0
+		.answer_title
+			h2
+				font-size: 1.6em
+			img
+				right: 17%
+				top: -10px
+		.answer_container
+			height: 60vh
+			img
+				height: 50vh
+			.answer_list
+				margin: 0
+				padding: 0
+				.first
+					font-size: 1em
+					margin-left: 8%
+					margin-top: 4%
+					max-width: 185px
+				.two
+					font-size: 14px
+					line-height: 18px
+					margin: 0 8px
+					max-width: 210px
+					a
+						display: block
+				.thre
+					margin-left: 0
+					font-size: 14px
+					max-width: 225px
+					margin-left: 10px
+				.fhour
+					font-size: 1em
+					max-width: 37%
+					margin-right: 5%
+					margin-bottom: 8%
+				.popup_item
+					padding: 6px 10px
+					p
+						font-size: 13px
+						a
+							font-size: 15px
+							display: block
+		.brif
+			a
+				font-size: 1.1em
+		// section etaps
+	#etaps 
+		h2
+			padding: 10px 6%
+			margin-right: 0
+			font-size: 2.1em
+			&::before
+				width: 240px
+				height: 240px
+		.etaps_wrap 
+			padding: 77px 40px 30px 20px
+			grid-template: repeat(5,1fr) / 1fr 1fr
+			a
+				&:nth-child(1)
+					grid-column: 1/2
+					grid-row: 1/2
+					&::after
+						width: 33vw
+						transform: rotate(30deg)
+						top: 139%
+						left: 80%
+				&:nth-child(2)
+					grid-column: 2/3
+					grid-row: 2/3
+					&::after
+						width: 33vw
+						transform: rotate(-30deg)
+						top: 139%
+						left: -276%
+				&:nth-child(3)
+					grid-column: 1/2
+					grid-row: 3/4
+					&::after
+						width: 33vw
+						transform: rotate(30deg)
+						top: 139%
+						left: 80%
+				&:nth-child(4)
+					grid-column: 2/3
+					grid-row: 4/5
+					&::after
+						width: 33vw
+						transform: rotate(-30deg)
+						top: 139%
+						left: -276%
+				&:nth-child(5)
+					grid-column: 1/2
+					grid-row: 5/6
+			p
+				&:nth-child(6)
+					grid-column: 2/3
+					grid-row: 1/2
+				&:nth-child(7)
+					grid-column: 1/2
+					grid-row: 2/3
+				&:nth-child(8)
+					grid-column: 2/3
+					grid-row: 3/4
+				&:nth-child(9)
+					grid-column: 1/2
+					grid-row: 4/5
+				&:nth-child(10)
+					grid-column: 2/3
+					grid-row: 5/6
+			a
+				width: 70px
+				height: 70px
+				font-size: 2.6rem
+				line-height: 2.6rem
+				&::after
+					width: 10.5vw
+					transform: rotate(30deg)
+			p
+				padding: 0
+				font-size: 15px
+	
+		// футер
+	.main-foot
+		grid-template: 1fr 2fr 1fr / 1fr
+		padding: 40px 0
+		.foot_menu
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			padding: 0
+			justify-content: space-evenly
+			align-content: center
+			li
+				text-align: center
+		.center
+			img
+				left: 0
+				margin: 0 25%
+				width: 50%
+		.contacts
+			padding: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-evenly
+			z-index: 2
+			position: relative
+			li
+				text-align: center				
+				a
+					font-size: 14px
+					&:hover
+						color: $accent
+					&:hover i
+						color: $bg_dark
+					i
+						font-size: 18px
+	// olld ruls just for the exemple
+	.landing-section
+		padding: 50px 0
+		h2 
+			text-align: center
+			font-size: 26px
+			margin-bottom: 26px
+	.section-ready
+		.container
+			grid-template-columns: 1fr
+			> div
+				padding: 0 8%
+			&.ready-left
+				border: none
+	.formsection 
+		form
+			grid-template-columns: 1fr 1fr
+	
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.top_menu_wrapper
+		display: none
+	.burger
+		display: block
+	
+	#about 
+		grid-template-columns:  1fr
+		grid-template-rows: 1fr 1fr 1fr 1fr
+		.a_title 
+			grid-column: 1/2
+			h1
+				font-size: 2em
+				margin-right: 34%
+				padding: 12px 0
+		.about_text_1 
+			grid-row: 2/3
+			img
+				top: -3vh
+				left: -1vw
+				transform: rotate(0)
+				&:hover
+					transform: rotate(-65deg)
+			h4
+				font-size: 1.3em
+				margin-left: 40px
+			p
+				font-size: 13px
+		.about_text_2 
+			padding-left: 22px
+			img
+				top: -2vh
+				transform: rotate(90deg)
+			h4
+				font-size: 1.3em
+				margin-left: 27px
+			p
+				font-size: 13px
+		.block_cat
+			.title_cat 
+				margin: 0
+				img
+					top: 3vh
+					left: 50%
+					transform: none
+				h3
+					font-size: 1.4em
+					padding: 6px
+					margin: 20px 0
+					line-height: 1.4em
+					padding-right: 15%	
+			.block_cat_wrap
+				right: -36px
+				top: 6px
+				width: 36vw
+				img
+					width: 110%
+	// section what smm
+	#what_smm 
+		grid-template-columns: 1fr
+		grid-template-rows: 1fr 2fr
+		background-image: url(../img/bg_coub.png)
+		background-repeat: no-repeat
+		.what_left 
+			background: none
+			.what_card 
+				margin: 8% 5% 0 46%
+				img
+					left: 14%
+					top: 9px
+				span
+					font-size: 1em
+				h2
+					font-size: 3em
+		.what_right 
+			padding: 10px 20px
+			p
+				font-size: 14px
+				line-height: 22px
+				font-weight: bold
+				color: $bg_dark
+				span
+					font-size: 1.6em
+				.brnone
+					display: none
+	// section advantages
+	#advantages 
+		padding: 30px 0
+		h2
+			font-size: 1.6em
+			margin-left: 8px
+			&::after
+				width: 135px
+				height: 135px
+				top: 9px
+		.list_advantages
+			margin-top: 15px
+			padding: 0
+			li
+				width: 80%
+				p
+					font-size: 1em
+					line-height: 1.4em
+					padding-right: 45px
+					margin: 8px
+				img
+					margin: 5px
+					width: 40px
+	// section answer
+	#answers
+		height: 100vh
+		padding: 25px 0
+		.answer_title
+			h2
+				font-size: 1.6em
+			img
+				right: 0
+				top: -10px
+		.answer_container
+			height: 60vh
+			img
+				height: 50vh
+				width: 60vw
+			.answer_list
+				margin: 0
+				padding: 20px
+				justify-content: space-between
+				.popup_item
+					padding: 10px
+					width: 100%
+					max-width: 100vw
+					margin: 0
+					position: relative
+					font-size: 1em
+					align-self: start
+					p
+						font-size: 13px
+						a
+							font-size: 15px
+							display: block
+					span
+						position: absolute
+						right: 10px
+						font-size: 1.5em
+						font-weight: bold
+						top: 3%
+						transition: transform 0.5s ease-in
+					&:hover span
+						transform: rotate(-90deg)
+				.two
+					span
+						top: 23%
+				.thre
+					span
+						top: 29%
+		.brif
+			a
+				font-size: 1.1em
+	// section etaps
+	#etaps 
+		padding: 50px 0 30px 0
+		h2
+			padding: 10px 6%
+			margin-right: 0
+			font-size: 2.1em
+			&::before
+				width: 240px
+				height: 240px
+				transform: rotate(-14deg)
+				top: 5%
+				left: -20%
+		.etaps_wrap 
+			padding: 20px 15px 40px 20px
+			grid-template: repeat(5,1fr) / 1fr 1fr
+			a
+				&:nth-child(1)
+					grid-column: 1/2
+					grid-row: 1/2
+					&::after
+						width: 37vw
+						transform: rotate(32deg)
+						top: 142%
+						left: 80%
+				&:nth-child(2)
+					grid-column: 2/3
+					grid-row: 2/3
+					&::after
+						width: 37vw
+						transform: rotate(-31deg)
+						top: 132%
+						left: -233%
+				&:nth-child(3)
+					grid-column: 1/2
+					grid-row: 3/4
+					&::after
+						width: 37vw
+						transform: rotate(32deg)
+						top: 142%
+						left: 80%
+				&:nth-child(4)
+					grid-column: 2/3
+					grid-row: 4/5
+					&::after
+						width: 37vw
+						transform: rotate(-31deg)
+						top: 132%
+						left: -233%
+				&:nth-child(5)
+					grid-column: 1/2
+					grid-row: 5/6
+			p
+				&:nth-child(6)
+					grid-column: 2/3
+					grid-row: 1/2
+				&:nth-child(7)
+					grid-column: 1/2
+					grid-row: 2/3
+				&:nth-child(8)
+					grid-column: 2/3
+					grid-row: 3/4
+				&:nth-child(9)
+					grid-column: 1/2
+					grid-row: 4/5
+				&:nth-child(10)
+					grid-column: 2/3
+					grid-row: 5/6
+			a
+				width: 70px
+				height: 70px
+				font-size: 2.6rem
+				line-height: 2.6rem
+				&::after
+					width: 10.5vw
+					transform: rotate(30deg)
+			p
+				padding: 0
+				font-size: 15px
+
+
+	// old class
+	.header-content
+		h1
+			font-size: 40px
+	.portfolio-section
+		grid-template-columns: 1fr
+		.portfolio-item
+			min-height: 50vh
+			font-size: 16px
+			&:nth-child(4)
+				grid-column: initial
+			&:nth-child(5)
+				grid-column: initial
+				grid-row: initial
+			&:nth-child(1)
+				grid-column: initial
+				grid-row: initial
+		.buttoncase
+			grid-column: 1/2
+	.formsection 
+		form
+			grid-template-columns: 1fr
+	
+	.blog-home
+		grid-template-columns: 1fr
+		.buttoncase
+			grid-column: 1/2
+		.blog-item
+			&:nth-child(3)
+				grid-column: initial
+			&:nth-child(4)
+				grid-column: initial
+	
+	.main-footer
+		padding: 40px 0
+		.footer-copi
+			margin-top: 10px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+@media only screen and (max-width : 820px)
+	// section etaps
+	#etaps 
+		.etaps_wrap 
+			a
+				&::after
+					width: 11.8vw
+
+			
