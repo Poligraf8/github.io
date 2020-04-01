@@ -263,17 +263,10 @@
 				width: 300px
 				height: 300px
 		.etaps_wrap 
-			padding: 77px 40px 30px 20px
-			a
-				width: 70px
-				height: 70px
-				font-size: 2.6rem
-				line-height: 2.6rem
-				&::after
-					width: 10.5vw
+			padding-top: 85px
 			p
 				padding: 0
-				font-size: 15px
+				font-size: 14px
 	// футер
 	.main-foot
 		grid-template-columns: 1fr 2fr 2fr
@@ -435,71 +428,11 @@
 				width: 240px
 				height: 240px
 		.etaps_wrap 
-			padding: 77px 40px 30px 20px
-			grid-template: repeat(5,1fr) / 1fr 1fr
-			a
-				&:nth-child(1)
-					grid-column: 1/2
-					grid-row: 1/2
-					&::after
-						width: 33vw
-						transform: rotate(30deg)
-						top: 139%
-						left: 80%
-				&:nth-child(2)
-					grid-column: 2/3
-					grid-row: 2/3
-					&::after
-						width: 33vw
-						transform: rotate(-30deg)
-						top: 139%
-						left: -276%
-				&:nth-child(3)
-					grid-column: 1/2
-					grid-row: 3/4
-					&::after
-						width: 33vw
-						transform: rotate(30deg)
-						top: 139%
-						left: 80%
-				&:nth-child(4)
-					grid-column: 2/3
-					grid-row: 4/5
-					&::after
-						width: 33vw
-						transform: rotate(-30deg)
-						top: 139%
-						left: -276%
-				&:nth-child(5)
-					grid-column: 1/2
-					grid-row: 5/6
-			p
-				&:nth-child(6)
-					grid-column: 2/3
-					grid-row: 1/2
-				&:nth-child(7)
-					grid-column: 1/2
-					grid-row: 2/3
-				&:nth-child(8)
-					grid-column: 2/3
-					grid-row: 3/4
-				&:nth-child(9)
-					grid-column: 1/2
-					grid-row: 4/5
-				&:nth-child(10)
-					grid-column: 2/3
-					grid-row: 5/6
-			a
-				width: 70px
-				height: 70px
-				font-size: 2.6rem
-				line-height: 2.6rem
-				&::after
-					width: 10.5vw
-					transform: rotate(30deg)
+			padding-top: 55px
+			grid-template: 30% 70% / repeat(5, 1fr)
 			p
 				padding: 0
-				font-size: 15px
+				font-size: 11px
 	
 		// футер
 	.main-foot
@@ -738,66 +671,67 @@
 		.etaps_wrap 
 			padding: 20px 15px 40px 20px
 			grid-template: repeat(5,1fr) / 1fr 1fr
+			img
+				display: none
 			a
-				&:nth-child(1)
-					grid-column: 1/2
-					grid-row: 1/2
-					&::after
-						width: 37vw
-						transform: rotate(32deg)
-						top: 142%
-						left: 80%
-				&:nth-child(2)
-					grid-column: 2/3
-					grid-row: 2/3
-					&::after
-						width: 37vw
-						transform: rotate(-31deg)
-						top: 132%
-						left: -233%
-				&:nth-child(3)
-					grid-column: 1/2
-					grid-row: 3/4
-					&::after
-						width: 37vw
-						transform: rotate(32deg)
-						top: 142%
-						left: 80%
-				&:nth-child(4)
-					grid-column: 2/3
-					grid-row: 4/5
-					&::after
-						width: 37vw
-						transform: rotate(-31deg)
-						top: 132%
-						left: -233%
-				&:nth-child(5)
-					grid-column: 1/2
-					grid-row: 5/6
-			p
-				&:nth-child(6)
-					grid-column: 2/3
-					grid-row: 1/2
-				&:nth-child(7)
-					grid-column: 1/2
-					grid-row: 2/3
-				&:nth-child(8)
-					grid-column: 2/3
-					grid-row: 3/4
-				&:nth-child(9)
-					grid-column: 1/2
-					grid-row: 4/5
-				&:nth-child(10)
-					grid-column: 2/3
-					grid-row: 5/6
-			a
+				display: block
+				border-radius: 50%
+				border: 8px solid blue
+				font-size: 2.5rem
+				line-height: 2.6rem
+				display: block
 				width: 70px
 				height: 70px
-				font-size: 2.6rem
-				line-height: 2.6rem
+				text-decoration: none
+				font-weight: bold
+				color: blue
+				margin: 10% auto
+				position: relative
 				&::after
+					content: ''
+					height: 8px
 					width: 10.5vw
-					transform: rotate(30deg)
+					position: absolute
+					background: blue
+					top: 44%
+					left: 100%
+				&:nth-child(2)
+					grid-column: 1/2
+					grid-row: 1/2
+					&::after
+						width: 37vw
+						transform: rotate(32deg)
+						top: 142%
+						left: 80%
+				&:nth-child(3)
+					grid-column: 2/3
+					grid-row: 2/3
+					&::after
+						width: 37vw
+						transform: rotate(-31deg)
+						top: 132%
+						left: -233%
+				&:nth-child(4)
+					grid-column: 1/2
+					grid-row: 3/4
+					&::after
+						width: 37vw
+						transform: rotate(32deg)
+						top: 142%
+						left: 80%
+				&:nth-child(5)
+					grid-column: 2/3
+					grid-row: 4/5
+					&::after
+						width: 37vw
+						transform: rotate(-31deg)
+						top: 132%
+						left: -233%
+				&:nth-child(6)
+					grid-column: 1/2
+					grid-row: 5/6
+					&::after
+						display: none
 			p
 				padding: 0
 				font-size: 15px
