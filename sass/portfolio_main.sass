@@ -32,10 +32,54 @@
 	.p_item
 		text-align: center
 		min-height: 50vh
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: start
+		flex-direction: column
+		position: relative
+		&:hover a
+			opacity: 1
+		&:hover h2
+			color: $light
+			text-decoration: underline
+		h2
+			margin-top: 10%
+		.p_inner_item
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.8)
+			text-align: center
+			padding-top: 20%
+			opacity: 0
+			transition: all .5s
+		&:hover .p_inner_item
+			opacity: 1
+			padding-top: 26%
+		a
+			border-radius: 8px
+			background: lighten($dark, 15%)
+			padding: 10px 20px
+			max-width: 100%
+			color: $light
+			text-decoration: none
+			text-transform: uppercase
+			font-weight: bold
+			opacity: 0
+			transition: all .5s
+			&:hover
+				border-bottom: 2px solid $accent 
 	.izi
 		background-image: url(../img/portfolio/izi4.jpg)
 		background-repeat: no-repeat
 		background-size: cover
+		&:hover h2
+			color: $dark
 	.contora
 		background-image: url(../img/portfolio/rk1.png)
 		background-repeat: no-repeat
@@ -45,22 +89,114 @@
 		background-repeat: no-repeat
 		background-size: cover
 		grid-column: 1/3
+		&:hover .p_inner_item
+			opacity: 1
+			padding-top: 16%
 // form section
 .form
 	background: $bg_dark
 	padding: 40px 0
 	form
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		justify-content: space-evenly
+		display: grid
+		grid-template-columns: repeat(3, 2fr) 1fr
+		grid-gap: 10px
+		padding: 0 10px
 		input
 			background: $dark
-			color: $light
+			min-width: 150px
+			color: lighten($dark, 15%)
 			border: none
 			border-left: 3px solid $accent
 			padding: 10px
+			&::placeholder
+				color: lighten($dark, 20%) 
+			&:focus
+				background: $light
+				outline: none
+				border-bottom: 3px solid $accent
+				transition: all .3s ease-in
+		button
+			background: transparent
+			background: $dark
+			color: $bg_dark
+			border: none
+			font-weight: bold
+			&:hover
+				box-shadow: $shadow
+				cursor: pointer
+				color: $light
 
-@import "media" // Всегда в конце
+
+
+
+
+// Стилі для окремої сторінки Контори
+.butt
+	@keyframes pushMe 
+		2% 
+			transform: rotate(3deg)
+		
+		4% 
+			transform: rotate(-3deg)
+		
+		6% 
+			transform: rotate(3deg)
+		
+		8% 
+			transform: rotate(-3deg)
+		
+		10% 
+			transform: rotate(0deg)
+.butt
+	position: relative
+	height: 20vh
+	background: $bg_dark
+	a
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -25px
+		margin-left: -100px
+		width: 200px
+		height: 50px
+		font-size: 20px
+		line-height: 50px
+		text-transform: uppercase
+		text-align: center
+		background-color: tomato
+		font-family: 'Open sans', sans-serif
+		text-decoration: none
+		color: #fff
+		animation: pushMe 4s infinite
+		transform-origin: 50% 50%
+		transition: all .2s
+		border-radius: 20px
+		box-shadow: 0 10px #cf2000
+		&:hover 
+			animation-play-state: paused
+			font-size: 21px
+		&:active 
+			margin-top: -15px
+			box-shadow: 0 3px #cf2000
+			height: 47px
+
+.rcontora
+	display: grid
+	grid-template: repeat(3, 1fr)/ 1fr 1fr
+	text-align: right
+	img
+		width: 100%
+		height: 100%
+		min-height: 400px
+	.info
+		padding: 20px
+.own_style
+	h3
+		text-align: center
+	.fotorama
+		img
+			width: 400px
+			height: 400px
+
+
+@import "media_portfolio" // Всегда в конце

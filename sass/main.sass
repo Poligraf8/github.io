@@ -263,14 +263,22 @@
   animation-duration: 2s
 
 .top_mnu ul 
-  margin-top: 160px
-  text-align: center
+	margin-top: 160px
+	text-align: center
 
 .top_mnu ul a 
-  display: block
-  text-transform: uppercase
-  position: relative
-  height: 60px
+	display: block
+	text-transform: uppercase
+	position: relative
+	height: 60px
+
+.menu_item
+	a
+		text-decoration: none
+		color: $light
+		&:hover
+			letter-spacing: 2px
+
 
 .top_mnu ul a span 
   display: block
@@ -294,7 +302,7 @@
 	padding: 60px 0
 	height: 100vh
 	min-height: 500px
-	overflow: hidden;
+	overflow: hidden
 	.a_title
 		h1
 			background: $light
@@ -576,34 +584,16 @@
 		text-align: center
 		position: relative
 		padding-top: 146px
+		img
+			grid-column: 1/6
+			width: 100%
+			padding: 0 5%
 		a
-			border-radius: 50%
-			border: 8px solid blue
-			font-size: 3rem
-			line-height: 3rem
-			display: block
-			width: 80px
-			height: 80px
-			text-decoration: none
-			font-weight: bold
-			color: blue
-			margin: 10% auto
-			position: relative
-			&::after
-				content: ''
-				height: 8px
-				width: 15vw
-				position: absolute
-				background: blue
-				top: 44%
-				left: 100%
-			&:nth-child(5):after
-				display: none
+			display: none
 		p
 			font-size: 1rem
 			font-weight: bold
 			padding: 0 20px
-
 
 
 
