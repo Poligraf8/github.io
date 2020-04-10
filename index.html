@@ -161,12 +161,6 @@
 		</div>
 	</section>
 	
-	<!-- <section class="formsection">
-		<form action="">
-			
-		</form>
-	</section> -->
-	<!-- Блок Заявки Coll to action -->
 	<section class="why_prof">
 		<h2>Чому потрібно довірити соц мережі спеціалістам?</h2>
 		<img src="../img/mongoose.svg" alt="Mongoose Pattern" class="patern">
@@ -186,28 +180,48 @@
 		</div>
 	</section>
 
-	<section class="coll_to">
-		<h2>Давайте ми допоможемо вам з проектом</h2>
-		<form action="telegram.php" method="POST">
-			<label for="">Введіть ваше ім'я:</label>
-			<input type="text" class="form-control" name="user_name" placeholder="Наприклад ПІкаЧу">
-			<label for="">Ваш номер телефону:</label>
-			<input type="text" class="form-control" name="user_phone" placeholder="+88005553532">
-			<label for="">Ваш E-mail:</label>
-			<input type="text" class="form-control" name="user_email" placeholder="you_mail@gmail.com">
-			<button type="submit" class="btn">Відправити форму</button>
-		</form>
-
-		<div class="butt">
-			<a href="#">Залишити За'явку</a>
-		</div>
-		<p>Залишіть за'явку - ми розберемо вашу ситуацію і допоможемо вам підібрати ефективне рішення для просування вашої справи :-}</p>
-	</section>
 	<section class="coll_2">
-		<h2>Зв'яжіться з нами для обговорення проекту</h2>
-		<p>Для того аби зв'язатися з нами вам не потрібен бет-сигнал просто натисніть кнопку або зателефонуйте.</p>
-		<a href="#">Залишити за'явку</a>
-		<span>+380 66 745 6713</span>
+		<h2>Для обговорення проекту</h2>
+		
+		<form action="telegram.php" method="POST">
+			<legend>Заповніть форму</legend>
+			<label for="" class="inp">
+				<input type="text" class="form-control" name="user_name" placeholder=" Ваше Ім'я" pattern=".{6,}" required>
+				<svg width="280px" height="18px" viewBox="0 0 280 18" class="border">
+				<path d="M0,12 L223.166144,12 C217.241379,12 217.899687,12 225.141066,12 C236.003135,12 241.9279,12 249.827586,12 C257.727273,12 264.639498,12 274.514107,12 C281.097179,12 281.755486,12 276.489028,12"></path>
+				</svg>
+				<svg width="14px" height="12px" viewBox="0 0 14 12" class="check">
+					<path d="M1 7 5.5 11 L13 1"></path>
+				</svg>
+			</label>
+			
+		
+			<label for="" class="inp">
+				<input type="text" class="form-control" name="user_phone" placeholder=" +805 0325 45" pattern=".{6,}" required>
+				<svg width="280px" height="18px" viewBox="0 0 280 18" class="border">
+				<path d="M0,12 L223.166144,12 C217.241379,12 217.899687,12 225.141066,12 C236.003135,12 241.9279,12 249.827586,12 C257.727273,12 264.639498,12 274.514107,12 C281.097179,12 281.755486,12 276.489028,12"></path>
+				</svg>
+				<svg width="14px" height="12px" viewBox="0 0 14 12" class="check">
+					<path d="M1 7 5.5 11 L13 1"></path>
+				</svg>
+			</label>
+				
+			
+			<label for="" class="inp">
+				<input type="text" class="form-control" name="user_email" placeholder=" you_mail@gmail.com" pattern=".{6,}" required>
+				<svg width="280px" height="18px" viewBox="0 0 280 18" class="border">
+				<path d="M0,12 L223.166144,12 C217.241379,12 217.899687,12 225.141066,12 C236.003135,12 241.9279,12 249.827586,12 C257.727273,12 264.639498,12 274.514107,12 C281.097179,12 281.755486,12 276.489028,12"></path>
+				</svg>
+				<svg width="14px" height="12px" viewBox="0 0 14 12" class="check">
+					<path d="M1 7 5.5 11 L13 1"></path>
+				</svg>
+			</label>
+			<div class="butt">
+				<button type="submit" class="btn">Відправити</button>
+			</div>
+			<span>Або зателефонуйте: <br>+380 66 745 6713</span>
+		</form>
+		
 	</section>
 
 	<footer class="main-foot">
